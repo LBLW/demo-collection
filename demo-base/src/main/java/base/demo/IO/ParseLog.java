@@ -18,7 +18,6 @@ public class ParseLog {
 
         BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/lblw/Downloads/result.log"));
 
-
         BufferedReader reader = new BufferedReader(inputStreamReader);
         String lineText = null;
         while((lineText = reader.readLine()) != null){
