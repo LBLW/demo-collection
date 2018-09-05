@@ -11,14 +11,14 @@ import java.net.Socket;
  * @create 2018-08-30 下午3:00
  * @desc HDFS客户端
  **/
-public class Client {
+public class PutClient {
 
     public static void main(String[] args) throws Exception {
 
         //与 nameNode 的交互过程
 
 
-        String nameNodeResponse = requestNameNode();
+        String nameNodeResponse = requestNameNode("");
         String[] responseResult = nameNodeResponse.split(":");
 
         String blockId = responseResult[0];
@@ -34,13 +34,13 @@ public class Client {
 
     }
 
-    public static String requestNameNode() throws Exception {
+    public static String requestNameNode(String filePath) throws Exception {
 
         Socket socket = new Socket("localhost",9000);
 
         OutputStream requestStream = socket.getOutputStream();
 
-        requestStream.write("PUT_BLOCK:/aa/a.log:1".getBytes());
+        requestStream.write(filePath.getBytes());
         requestStream.flush();
 
         InputStream responseStream = socket.getInputStream();
@@ -77,9 +77,9 @@ public class Client {
         while((len = fileStream.read(bytes)) != -1) {
 
             requestStream.write(bytes, 0, len);
-
+            requestStream.flush();
             count += len;
-            if(count == 1 * 1024) {
+            if(count == 1 * 1024 * 1024) {
                 break;
             }
 

@@ -4,6 +4,8 @@ import com.demo.server.handler.NameNodeHandler;
 
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author wangzezhou
@@ -14,13 +16,16 @@ public class NameNodeServer {
 
     public static void main(String[] args) throws Exception {
 
+        Map<String, Map<Long, String>> metaData = new ConcurrentHashMap<>();
+
         ServerSocket serverSocket = new ServerSocket(9000);
+
 
         while (true) {
 
             Socket socket = serverSocket.accept();
 
-            new Thread(new NameNodeHandler(socket)).start();
+            new Thread(new NameNodeHandler(socket, metaData)).start();
 
         }
 
