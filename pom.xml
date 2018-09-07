@@ -12,7 +12,7 @@
         <module>demo-base</module>
         <module>demo-spring</module>
         <module>demo-module</module>
-        <module>demo-hdfs</module>
+        <module>demo-hadoop</module>
     </modules>
 
     <build>

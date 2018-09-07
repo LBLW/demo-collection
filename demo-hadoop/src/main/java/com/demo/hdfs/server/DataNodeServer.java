@@ -1,6 +1,6 @@
-package com.demo.server;
+package com.demo.hdfs.server;
 
-import com.demo.server.handler.DataNodeHandler;
+import com.demo.hdfs.server.handler.DataNodeHandler;
 
 import java.net.ServerSocket;
 import java.net.Socket;

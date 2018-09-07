@@ -1,4 +1,4 @@
-package com.demo.client;
+package com.demo.hdfs.client;
 
 /**
  * @author wangzezhou

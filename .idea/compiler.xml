@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-base" />
-        <module name="demo-hdfs" />
+        <module name="demo-hadoop" />
         <module name="demo-module" />
         <module name="demo-spring" />
       </profile>
