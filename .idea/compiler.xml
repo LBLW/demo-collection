@@ -9,7 +9,9 @@
         <module name="demo-base" />
         <module name="demo-hadoop" />
         <module name="demo-module" />
+        <module name="demo-redis" />
         <module name="demo-spring" />
+        <module name="demo-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

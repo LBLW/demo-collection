@@ -14,5 +14,14 @@ public class TestBigDecimal {
 
         BigDecimal bigDecimal = new BigDecimal((double) 30 / (double) 100).setScale(2, RoundingMode.HALF_UP).multiply(new BigDecimal(100));
         System.out.println(bigDecimal.toString());
+
+        double rate = 0.00;
+
+        System.out.println(rate == 0);
+
+        System.out.println(10 > 40.34);
+
+        BigDecimal decimal = new BigDecimal(78 * 0.8).setScale(2, RoundingMode.HALF_UP);
+        System.out.println(decimal.doubleValue());
     }
 }

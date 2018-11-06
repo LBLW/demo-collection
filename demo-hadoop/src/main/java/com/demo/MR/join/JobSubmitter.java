@@ -1,4 +1,4 @@
-package com.demo.MR.wc;
+package com.demo.MR.join;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -10,27 +10,29 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * @author wangzezhou
- * @create 2018-09-14 下午5:24
- * @desc 提交任务
+ * @create 2018-10-01 下午4:52
+ * @desc 任务提交
  **/
-public class JobSubmitted {
+public class JobSubmitter {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException {
 
         Job job = Job.getInstance();
 
         job.setJar(args[0]);
 
         // 设置Map处理相关数据
-        job.setMapperClass(WcMapper.class);
+        job.setMapperClass(JobMapper.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
 
         // 设置Reduce处理相关数据
-        job.setReducerClass(WcReducer.class);
+        job.setReducerClass(JobReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
@@ -45,9 +47,8 @@ public class JobSubmitted {
         job.setOutputFormatClass(TextOutputFormat.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-        //设置combiner方法
-        //可以将reduce逻辑给mapTask做聚合
-        job.setCombinerClass(WcCombiner.class);
+        // 将资源文件事先加载到mapTask的缓存目录中去
+        job.addCacheFile(new URI(""));
 
         //提交yarn
         boolean result = job.waitForCompletion(true);
