@@ -13,8 +13,8 @@
         <module name="demo-log" />
         <module name="demo-module" />
         <module name="demo-redis" />
-        <module name="demo-spring" />
         <module name="demo-zookeeper" />
+        <module name="spring-cloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
