@@ -15,6 +15,8 @@
         <module>demo-hadoop</module>
         <module>demo-redis</module>
         <module>demo-zookeeper</module>
+        <module>demo-log</module>
+        <module>demo-arithmetic</module>
     </modules>
 
     <build>
@@ -202,6 +204,23 @@
                 <version>3.4.11</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-client</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-common</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-protocol</artifactId>
+                <version>1.2.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo-arithmetic" />
         <module name="demo-base" />
+        <module name="demo-gateway" />
         <module name="demo-hadoop" />
+        <module name="demo-log" />
         <module name="demo-module" />
         <module name="demo-redis" />
         <module name="demo-spring" />
@@ -16,6 +19,16 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base-ring" target="1.5" />
+      <module name="demo" target="1.8" />
+      <module name="demo-springboot" target="1.8" />
+      <module name="demo-sql" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="demo-gateway" options="-parameters" />
+      <module name="demo-springboot" options="-parameters" />
+    </option>
   </component>
 </project>

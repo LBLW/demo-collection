@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/base-ring/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-sql/pom.xml" />
       </set>
     </option>
   </component>
