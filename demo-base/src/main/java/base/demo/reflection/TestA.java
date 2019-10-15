@@ -20,4 +20,6 @@ public class TestA extends TestB {
     private int D;
 
     private int E;
+
+    private String[] testArray;
 }

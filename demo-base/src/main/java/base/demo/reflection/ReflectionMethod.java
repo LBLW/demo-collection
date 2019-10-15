@@ -28,10 +28,13 @@ public class ReflectionMethod {
         testA.setB("B");
         testA.setC("C");
 
-        System.out.println(testA);
+//        System.out.println(testA);
+//
+//        testA = (TestA) getField(testA);
+//
+//        System.out.println(testA);
 
-        testA = (TestA) getField(testA);
-
+        setField(testA,new String[]{"aaaa","bbbb"});
         System.out.println(testA);
 
     }
@@ -48,6 +51,24 @@ public class ReflectionMethod {
 
         return testB;
 
+    }
+
+
+    public static void setField(Object testB, String[] testArray)
+            throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+
+        Method[] methods = testB.getClass().getMethods();
+        /**
+         * https://blog.csdn.net/cskgnt/article/details/7816212
+         */
+        Method method = testB.getClass().getMethod("setTestArray",new Class[]{String[].class});
+
+        /**
+         * 这是因为编译器会把字符串数组当作一个可变长度参数传给对象o,而我们取得方法只有一个参数,
+         * 所以就会出现wrong number of arguments的异常,
+         * 我们只要把字符串数组强制转换为一个Object对象就可以解决这个异常了.
+         */
+        method.invoke(testB,(Object) testArray);
     }
 
 
