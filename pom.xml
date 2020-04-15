@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>demo-base</module>
-        <module>demo-spring</module>
         <module>demo-module</module>
         <module>demo-hadoop</module>
         <module>demo-redis</module>

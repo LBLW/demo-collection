@@ -14,14 +14,15 @@
         <module name="demo-module" />
         <module name="demo-redis" />
         <module name="demo-zookeeper" />
-        <module name="spring-cloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base-ring" target="1.5" />
       <module name="demo" target="1.8" />
+      <module name="demo-spring" target="1.8" />
       <module name="demo-springboot" target="1.8" />
       <module name="demo-sql" target="1.8" />
+      <module name="spring-cloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -16,7 +16,11 @@ public class StringCount {
 
         String content = "有关键字11跟关键字2还有排除关键字3跟关键字6看看你到底报警不报警";
 
-        System.out.println(alarm(key_word_1,key_word_2,key_word_3,content));
+//        System.out.println(alarm(key_word_1,key_word_2,key_word_3,content));
+
+        String key_word_4 = "松赞干布";
+
+        System.out.println(key_word_4.length());
 
     }
 
