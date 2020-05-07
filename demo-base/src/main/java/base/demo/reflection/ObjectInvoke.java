@@ -1,7 +1,7 @@
-package base.demo.collection;
+package base.demo.reflection;
 
-import base.demo.pojo.SimpleClass;
-import base.demo.pojo.SimpleInnerClass;
+import base.demo.reflection.clazz.pojo.SimpleClass;
+import base.demo.reflection.clazz.pojo.SimpleInnerClass;
 
 import java.util.ArrayList;
 import java.util.List;

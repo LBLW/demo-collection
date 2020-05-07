@@ -1,4 +1,4 @@
-package base.demo.clazz;
+package base.demo.reflection.clazz;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

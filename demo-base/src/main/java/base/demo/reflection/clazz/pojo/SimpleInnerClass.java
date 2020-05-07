@@ -1,4 +1,4 @@
-package base.demo.pojo;
+package base.demo.reflection.clazz.pojo;
 
 import lombok.Data;
 
