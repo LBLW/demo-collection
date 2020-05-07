@@ -1,4 +1,4 @@
-package base.demo.JVM;
+package base.demo.jvm;
 
 /**
  * @author wangzezhou

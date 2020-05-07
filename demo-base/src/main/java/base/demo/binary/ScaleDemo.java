@@ -7,7 +7,7 @@ package base.demo.binary;
  **/
 public class ScaleDemo {
 
-    public static void main(String[] args) {
+    public void bitNumber() {
 
         //十进制
         int a = 10;
@@ -31,6 +31,14 @@ public class ScaleDemo {
         int g = 0xa;
 
         int h = 0xf;
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(-10>>>1);
+        System.out.println(String.format("%x",-10>>>1));
+        System.out.println(10>>>1);
 
     }
 }
