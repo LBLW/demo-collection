@@ -6,8 +6,9 @@ package base.demo.oob;
  **/
 
 public class FatherClass {
-
+    private String fatherName = "000";
     String name1 = "aaaa";
+    static int i;
     public FatherClass() {
         System.out.print("Base");
     }
@@ -19,6 +20,16 @@ public class FatherClass {
     public static void main(String[] args) {
         SonClass sonClass =null;
         sonClass.a();
+        int []a[] = new int [1][1];
+
+        Object o = new Object(){
+          public boolean equals(Object o) {
+              return true;
+          }
+        };
+
+        System.out.println(o.equals("a"));
+        System.out.println(i);
     }
 
 }

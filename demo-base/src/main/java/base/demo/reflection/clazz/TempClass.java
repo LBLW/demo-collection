@@ -11,7 +11,13 @@ import lombok.Generated;
  **/
 public class TempClass {
 
+    private int a = 0;
 
+    public static void main(String[] args) {
+        class a {
+
+        }
+    }
 
     @AllArgsConstructor
     @Data
@@ -20,5 +26,6 @@ public class TempClass {
         private String tempName;
 
         private Class<?> tempClassType;
+
     }
 }

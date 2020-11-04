@@ -40,5 +40,9 @@ public class ScaleDemo {
         System.out.println(String.format("%x",-10>>>1));
         System.out.println(10>>>1);
 
+        System.out.println(2<<1);
+
+        System.out.println(13&17);
+
     }
 }

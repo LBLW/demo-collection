@@ -2,6 +2,8 @@ package base.demo.string;
 
 import org.apache.commons.lang.StringUtils;
 
+import java.util.Properties;
+
 /**
  * @author wangzezhou
  * @create 2019-06-17 2:34 PM
@@ -10,6 +12,16 @@ import org.apache.commons.lang.StringUtils;
 public class StringBase {
 
     public static void main(String[] args) {
+
+        String ab = "a";
+        String ba = "a";
+        System.out.println(ab == ba);
+
+        double ac = 2.0;
+        int x = 4;
+
+        System.out.println(ac/=++x);
+
         long a = System.currentTimeMillis();
 
         System.out.println(String.format("time is %s", a));
@@ -21,6 +33,10 @@ public class StringBase {
         System.out.println(StringUtils.isNumeric(num));
 
         System.out.println("testPro001".toUpperCase());
+
+        int i=0;
+        i=i++;
+        System.out.println(i);
     }
 
     public static boolean isNumber(String str) {
@@ -40,3 +56,4 @@ public class StringBase {
         return true;
     }
 }
+

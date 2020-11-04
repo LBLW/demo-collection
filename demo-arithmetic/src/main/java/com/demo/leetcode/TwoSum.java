@@ -26,6 +26,8 @@ public class TwoSum {
                 oldNum = tempNum;
             }
         }
+
+        return null;
     }
 
 }

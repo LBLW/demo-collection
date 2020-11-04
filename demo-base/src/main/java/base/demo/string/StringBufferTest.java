@@ -9,6 +9,24 @@ public class StringBufferTest {
 
     public static void main(String[] args) {
 
-        new StringBuffer().append(121).reverse().toString();
+        testStringBuffer();
     }
+
+    public static void testStringBuffer(){
+
+
+        StringBuffer stringBuffer = new StringBuffer();
+        System.out.println(stringBuffer.append(121).reverse().toString());
+        System.out.println(stringBuffer.append("testInterFace").toString());
+
+    }
+
+    public static void testStringBuilder() {
+        new StringBuilder().append(121).reverse().toString();
+    }
+
+    public static void testString() {
+        new String("121");
+    }
+
 }

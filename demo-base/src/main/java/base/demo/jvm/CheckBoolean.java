@@ -15,5 +15,11 @@ public class CheckBoolean {
 
         if(flag == true)
             System.out.println("hello, jvm");
+
+        int m = 12;
+        int n = 34;
+
+        System.out.println(String.format("%d,%d",m++,++n));
+        System.out.println(String.format("%d,%d",n++,++m));
     }
 }

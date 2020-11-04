@@ -17,5 +17,37 @@ public class BaseData{
 
         Integer paseInteger = Integer.valueOf(59);
 
+        double c = 100.0d;
+        double d = 3.0d;
+
+        System.out.println(c%d);
+
+        int i,sum =0;
+        for(i=0;i<10;i++,sum+=i);
+        System.out.println(i);
+
+        System.out.println(17^5);
+
+        int sa=0;
+        int sb=0;
+
+        for(int j=0; j <=100; j++) {
+            sa += j;
+            sb++;
+        }
+
+        System.out.println("sa * sb = " + (sa * sb) );
+
+        char s1 = '\u0639';
+
+        String s2 = "hello,world\0";
+
+
+       String a1[];
+       String[] a2;
+
+       Object a3[];
+
+
     }
 }

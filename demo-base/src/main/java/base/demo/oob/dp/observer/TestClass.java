@@ -5,7 +5,7 @@ import base.demo.oob.dp.observer.impl.*;
 /**
  * @author wangzezhou
  * @create 2020-05-19 1:55 PM
- * @desc 测试类
+ * @desc 观察者模式测试类
  **/
 public class TestClass {
 

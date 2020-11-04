@@ -3,7 +3,7 @@ package base.demo.oob.dp.strategy;
 /**
  * @author wangzezhou
  * @create 2020-05-18 8:22 PM
- * @desc 测试类
+ * @desc 策略模式测试类
  **/
 public class TestClass {
 

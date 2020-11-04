@@ -2,6 +2,8 @@ package base.demo.otherinteresting;
 
 import lombok.Data;
 
+import java.util.Scanner;
+
 /**
  * @author wangzezhou
  * @create 2020-04-13 3:13 PM
@@ -21,8 +23,11 @@ public class YXHLittleProgram {
     }
 
     public static void main(String[] args) {
-        int[] aaa = new int[]{1,3};
-        System.out.println(YXHLittleProgram.generateYXMessage("ACT","更新以后不生成日志了","ACT更新以后不生成日志文件"));
+        Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        String b = scanner.nextLine();
+        String c = scanner.nextLine();
+        System.out.println(YXHLittleProgram.generateYXMessage(a,b,c));
     }
 
 }

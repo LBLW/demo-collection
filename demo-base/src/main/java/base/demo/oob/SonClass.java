@@ -17,11 +17,13 @@ public class SonClass extends FatherClass {
     }
 
     public static void main(String[] args) {
-        SonClass sonClass = new SonClass("1111");
-        System.out.println(sonClass.a);
+        FatherClass sonClass = new SonClass("1111");
+//        System.out.println(sonClass.a);
+//        System.out.println(sonClass);
+        System.out.println("/");
 
         System.out.println((short) 10/10.2*2);
-
+        System.out.println(~0);
 //        new FatherClass();
 //
 //        SonClass s1 = new SonClass();

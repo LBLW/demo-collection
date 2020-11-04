@@ -1,5 +1,6 @@
 package base.demo.reflection;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -11,7 +12,8 @@ import java.lang.reflect.Method;
 public class ReflectionMethod {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-//        Class<TestClass> clazz = TestClass.class;
+        Class<TestClass> clazz = TestClass.class;
+
 //
 //        System.out.println(clazz.getName());
 //
@@ -58,6 +60,8 @@ public class ReflectionMethod {
             throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
         Method[] methods = testB.getClass().getMethods();
+
+        Array.newInstance(null,1);
         /**
          * https://blog.csdn.net/cskgnt/article/details/7816212
          */
@@ -70,6 +74,7 @@ public class ReflectionMethod {
          */
         method.invoke(testB,(Object) testArray);
     }
+
 
 
 }

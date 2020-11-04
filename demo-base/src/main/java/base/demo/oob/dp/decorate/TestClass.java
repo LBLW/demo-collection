@@ -7,7 +7,7 @@ import base.demo.oob.dp.decorate.condiment.Whip;
 /**
  * @author wangzezhou
  * @create 2020-05-20 6:00 PM
- * @desc 测试类
+ * @desc 装饰者模式测试类
  **/
 public class TestClass {
 

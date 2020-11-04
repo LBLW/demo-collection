@@ -28,6 +28,10 @@
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
         </dependency>
+        <dependency>
+            <groupId>org.mine.demo</groupId>
+            <artifactId>demo-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
